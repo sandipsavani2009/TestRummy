@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>webviewjavascript</title>
+
+    <style>
+#myDIV {
+<!--  width: 500px;-->
+<!--  height: 500px;-->
+<!--  background-color: lightblue;-->
+}
+
+button {
+ font-family: Arial,Helvetica,sans-serif;
+ font-size: 24px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!--<button onclick="init(1)">Try it</button>-->
+
+<div id="myDIV">
+    Click to change value.
+</div>
+<script type="text/javascript">
+
+    function init(val){
+        androidFunction.setResult(val+"");
+        document.getElementById("myDIV").innerHTML = val;
+    }
+
+
+</script>
+
+</body>
+
+</html>

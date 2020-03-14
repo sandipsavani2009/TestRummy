@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_three"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/color_three"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginMedium">
+
+        <LinearLayout
+            android:id="@+id/back_button"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/back_button_size"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_icon_white" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/game_logs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/abc_text_size_title_material_toolbar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@drawable/white_background_curved_tops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/today"
+                    android:background="@color/very_light_grey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:paddingTop="@dimen/half_fab_margin"
+                        android:paddingBottom="@dimen/half_fab_margin"
+                        android:gravity="center_horizontal"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Today"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:id="@+id/today_selector"
+                        android:background="@color/color_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"></View>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/past"
+                    android:background="@color/very_light_grey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:paddingTop="@dimen/half_fab_margin"
+                        android:paddingBottom="@dimen/half_fab_margin"
+                        android:gravity="center_horizontal"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Past"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:id="@+id/past_selector"
+                        android:visibility="invisible"
+                        android:background="@color/color_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"></View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/duration_layout"
+                    android:visibility="gone"
+                    layout="@layout/history_pages_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--FILTERS-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Type"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin">
+
+                        <CheckBox
+                            android:id="@+id/wager_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Wager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/win_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Win"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Conversion From"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/half_fab_margin"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin">
+
+                        <CheckBox
+                            android:id="@+id/fun_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Fun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/cash_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Cash"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/bonus_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Bonus"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/loyalty_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Loyalty"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/social_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Social"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Conversion To"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/half_fab_margin"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin">
+
+                        <CheckBox
+                            android:id="@+id/fun_to_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Fun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/cash_to_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Cash"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/bonus_to_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Bonus"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/loyalty_to_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Loyalty"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/social_to_cb"
+                            android:textSize="@dimen/text_secondary"
+                            android:text="Social"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/discard_player_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingSizeSmallPlus"
+        android:text="Player 1"
+        android:textColor="@color/Orange"
+        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+    <in.glg.rummy.view.RummyView
+        android:id="@+id/discard_player_cards_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_trans90"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/iam_back_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/info_msg_iam_back"
+            android:textColor="@color/smokey_white"
+            android:textSize="@dimen/textSizeIamBackScreen" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cards_rv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="@dimen/openDeckHeight"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/iam_back_btn"
+            android:text="I AM BACK"
+            android:background="@color/color_one"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_height="@dimen/join_cancel_btn_height"
+            android:layout_width="@dimen/widthIamBackBtn"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/iam_back_sub_title"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginSizeSmall"
+            android:layout_width="match_parent"
+            android:text="@string/info_iam_back"
+            android:textColor="@color/smokey_white"
+            android:textSize="@dimen/textSizeIamBackScreen" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

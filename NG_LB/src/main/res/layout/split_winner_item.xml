@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/buyInMargin"
+        android:layout_marginTop="@dimen/buyInMargin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/winner_name"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/settingsViewTitleTextSize" />
+
+        <TextView
+            android:id="@+id/prize_money_tv"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/settingsViewTitleTextSize" />
+    </LinearLayout>
+</LinearLayout>

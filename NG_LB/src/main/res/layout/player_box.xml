@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/playerBoxWidth"
+    android:layout_height="@dimen/playerBoxHeight"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/player_details_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/playerBoxMarginTop"
+        android:alpha="0.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/player_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/marginSizeMicroPlus">
+
+            <TextView
+                android:id="@+id/player_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="@dimen/playerBoxTextSize"
+                android:textStyle="normal" />
+
+            <include
+                android:id="@+id/player_rating_bar"
+                layout="@layout/rating_bar_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/player_points_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/playerBoxTextSize"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/player_rank_tv"
+                    android:visibility="gone"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/playerBoxTextSize"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/player_system_iv"
+            android:layout_width="@dimen/mobile_player_icon_size"
+            android:layout_height="@dimen/mobile_player_icon_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/playerStatucIconMarginBottom"
+            android:layout_marginLeft="@dimen/playerStatucIconMarginLeft"
+            android:src="@drawable/mobile"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/player_dealer_iv"
+            android:layout_width="@dimen/mobile_player_icon_size"
+            android:layout_height="@dimen/mobile_player_icon_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/playerStatucIconMarginBottom"
+            android:layout_marginRight="@dimen/playerStatucIconMarginLeft"
+            android:src="@drawable/d_icon"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/auto_play_layout"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/autoPlayiewWidth"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/auto_play_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/autoPlayiewImageSize"
+                android:layout_height="@dimen/autoPlayiewImageSize"
+                android:src="@drawable/ai_icon" />
+
+            <TextView
+                android:id="@+id/auto_play_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Auto Play X of Y"
+                android:textColor="@color/white"
+                android:textSize="@dimen/playerBoxSubTextSize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_drop_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="@dimen/player_drop_iv_width"
+            android:layout_height="@dimen/player_drop_iv_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/playerBoxMarginTop"
+            android:src="@drawable/player_drop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_discard_dummy_layout"
+        android:layout_width="@dimen/stackCardWidth"
+        android:layout_height="@dimen/scStackCardHeight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="380dp"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/curve_edges_gray"
+        android:padding="@dimen/fab_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heading"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="Congratulations !"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:text="This is test message to be displayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/done"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/button_dialog_top_margin"
+            android:text="OK"
+            android:background="@color/color_one"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fab_margin"
+            android:textAllCaps="false"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+    android:padding="4dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/curve_edges_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:text="Are you sure you want to delete this bank account ?"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:paddingRight="32dp"
+            android:paddingLeft="32dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes_btn"
+                android:textColor="@color/white"
+                android:text="Yes"
+                android:background="@color/color_button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/no_btn"
+                android:layout_marginLeft="32dp"
+                android:text="No"
+                android:background="@color/grey"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

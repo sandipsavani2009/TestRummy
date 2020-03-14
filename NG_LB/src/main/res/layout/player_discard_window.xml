@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gameSettingsViewWidth"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans85"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:layout_width="@dimen/settingsCloseBtnSize"
+                android:layout_height="@dimen/settingsCloseBtnSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/marginSizeSmallPlus"
+                android:src="@drawable/playerdiscard" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/player_discard_cards_header"
+                android:textColor="@color/White"
+                android:textSize="@dimen/settingsViewTitleTextSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pop_up_close_btn"
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/marginSizeSmallPlus"
+            android:contentDescription="closebtn"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/player_discard_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2" />
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gameSettingsViewWidth"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans85"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pop_up_close_btn"
+                android:layout_width="@dimen/popUpCloseBtnSize"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/marginSizeSmallPlus"
+                android:contentDescription="closebtn"
+                android:src="@drawable/close" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/settingsCloseBtnSize"
+                    android:layout_height="@dimen/settingsCloseBtnSize"
+                    android:layout_marginRight="@dimen/marginSizeSmallPlus"
+                    android:src="@drawable/report" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report a Problem"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/settingsViewTitleTextSize" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Table ID"
+                    android:textColor="@color/highlight_font_color"
+                    android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                <TextView
+                    android:id="@+id/report_view_table_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginSizeSmall"
+                    android:text="1332323"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/settingsViewInfoValueTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_weight="0.333"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game ID"
+                    android:textColor="@color/highlight_font_color"
+                    android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                <TextView
+                    android:id="@+id/report_view_game_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginSizeSmall"
+                    android:text="8237478"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/settingsViewInfoValueTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_weight="0.333"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Type"
+                    android:textColor="@color/highlight_font_color"
+                    android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                <TextView
+                    android:id="@+id/report_view_game_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginSizeSmall"
+                    android:text="PR Joker"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/settingsViewInfoValueTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.3"
+                android:text="Bug Type"
+                android:textColor="@color/highlight_font_color"
+                android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/rounded_rect_border">
+
+                <Spinner
+                    android:id="@+id/bug_type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinnerHeight"
+                    android:textColor="@color/White" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bug_explanation_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/report_problem_marigin"
+            android:imeOptions="flagNoExtractUi"
+            android:background="@drawable/rounded_rect_border"
+            android:gravity="left|top"
+            android:padding="@dimen/paddingSizeSmall"
+            android:textColor="@color/White"
+            android:textSize="@dimen/settingsViewInfoValueTextSize" />
+
+        <Button
+            android:id="@+id/submit_report_button"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/closeBtnSize"
+            android:layout_gravity="bottom|center|right"
+            android:background="@color/color_one"
+            android:text="SUBMIT"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:textColor="@color/white" />
+    </LinearLayout></ScrollView>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/lobbyItemMargin"
+    android:paddingBottom="@dimen/lobbyItemMargin">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:gravity="center">
+
+        <include layout="@layout/lobby_active_users" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/table_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:textColor="@color/lobby_list_text"
+            android:textSize="@dimen/textSizeMedium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bet"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize" />
+
+            <TextView
+                android:id="@+id/betAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/table_bet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSizeSmall"
+        android:layout_marginRight="@dimen/marginSizeSmall"
+        android:layout_weight="0.29"
+        android:textColor="@color/lobby_list_text"
+        android:textSize="@dimen/filterBarTextSize"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSizeSmall"
+        android:layout_marginRight="@dimen/marginSizeSmall"
+        android:layout_weight="0.20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bet"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chips"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize" />
+
+            <TextView
+                android:id="@+id/chipsAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.19"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lobby_players_iv"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/player_on" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noOfPlayersTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginSizeSmall"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginSizeSmall"
+                android:text="Players"
+                android:textColor="@color/lobby_list_text"
+                android:textSize="@dimen/filterBarTextSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/join_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_join"
+                android:gravity="right"
+                android:text="JOIN"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/table_siting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/filterBarTextSize" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:gravity="left"
+        android:text="@string/join"
+        android:textColor="@color/white"
+        android:textSize="@dimen/filterBarTextSize"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/table_total_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSizeSmall"
+        android:textColor="@color/lobby_list_text"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</LinearLayout>

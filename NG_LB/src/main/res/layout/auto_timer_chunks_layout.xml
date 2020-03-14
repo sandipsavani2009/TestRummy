@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/auto_chunk_1"
+        android:layout_width="@dimen/auto_chunk_iv_width"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chunk1" />
+
+    <ImageView
+        android:id="@+id/auto_chunk_2"
+        android:layout_width="@dimen/auto_chunk_iv_width"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chunk2" />
+
+    <ImageView
+        android:id="@+id/auto_chunk_3"
+        android:layout_width="@dimen/auto_chunk_iv_width"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chunk3" />
+</LinearLayout>

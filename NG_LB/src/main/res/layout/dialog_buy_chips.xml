@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/buy_chips_header"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/color_three">
+
+            <ImageView
+                android:id="@+id/pop_up_close_btn"
+                android:layout_width="@dimen/popUpCloseBtnSize"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="closebtn"
+                android:src="@drawable/close" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/settingsCloseBtnSize"
+                    android:layout_height="@dimen/settingsCloseBtnSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_logo_symbol" />
+
+                <in.glg.rummy.view.RummyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Chips"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/settingsViewTitleTextSize" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buy_chips_header"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/web_pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

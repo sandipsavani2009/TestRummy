@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "175815169646",
+    "firebase_url": "https://taj-rummy-firebase.firebaseio.com",
+    "project_id": "taj-rummy-firebase",
+    "storage_bucket": "taj-rummy-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175815169646:android:619be27d0f9b6284",
+        "android_client_info": {
+          "package_name": "in.glg.rummy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175815169646-cor0vma1k3fq0vfhhfnrono9gku6m2qv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.glg.rummy",
+            "certificate_hash": "de6735bb730c173a6712372e07b4a7842da1cbcc"
+          }
+        },
+        {
+          "client_id": "175815169646-vj2km1e1n2q3ff1g59o7dkijrlqg5ma8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-0heBk6jRsQTvYV_wxmgDqy4ALgi0JYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175815169646-dc9057s0p26t1t95v9kcum82b4eon641.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "175815169646-soltpc8o66fcqnci85kb5gvup2qkfi5c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gridlogic.tajrummy",
+                "app_store_id": "941088444"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

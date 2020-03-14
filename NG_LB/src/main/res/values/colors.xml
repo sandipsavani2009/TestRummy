@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_one">@color/nostra_theme_color</color>
+    <color name="color_two">@color/white</color>
+    <color name="color_three">@color/black</color>
+    <color name="color_four">@color/black</color>
+
+    <color name="color_button">@color/color_one</color>
+    <color name="color_edit_text_line">@color/color_one</color>
+    <color name="color_text_view">@color/color_one</color>
+
+    <color name="highlight_font_color">@color/color_one</color>
+    <color name="colorAccent">@color/color_one</color>
+    <color name="highlight_font_scroller">@color/nostra_theme_color</color>
+    <color name="home_bottom_font">@color/orange</color>
+
+    <color name="lobby_list_bg">@color/black</color>
+    <color name="lobby_list_text">@color/black</color>
+
+    <color name="lobby_list_join">@color/dark_grey</color>
+
+    <color name="home_menu_text">@color/black</color>
+
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="indigo_darker">#1a4178</color>
+    <color name="indigo_darker_2">#0f2748</color>
+    <color name="nostra_theme_color">#008BDE</color>
+    <color name="title_theme_color">#008BDE</color>
+
+    <color name="yellow_color">#f5c223</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="blue_color">#2196F3</color>
+    <color name="error_red">#F44336</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="grey_dark">#8a8a8a</color>
+    <color name="dark_grey">#424242</color>
+    <color name="white">#ffffff</color>
+    <color name="smokey_white">#9A9A9A</color>
+    <color name="light_green">#C5E1A5</color>
+    <color name="green">#48a92d</color>
+    <color name="dark_green">#3e5f21</color>
+    <color name="amber">#FFC107</color>
+    <color name="red">#F44336</color>
+    <color name="textColorError">#F44336</color>
+    <color name="black">#000000</color>
+    <color name="black_trans55">#8c000000</color>
+    <color name="gameScreenDividerColor">#717070</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_trans85">#cc000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Orange">#faaf3b</color>
+    <color name="orange">#ff9966</color>
+    <color name="colorTimerBg">#212121</color>
+    <color name="black_trans75">#bf000000</color>
+    <color name="scoreBoardbgColor">#f5f5f7</color>
+    <color name="black_gray">#3f3f3f</color>
+    <color name="black_trans50">#80000000</color>
+    <color name="meldScoreRedColor">#c32126</color>
+    <color name="meldScoreGreenColor">#b4fa1e</color>
+    <color name="WhiteSmoke">#f5f5f5</color>
+    <color name="timerBorderColor">#8adb0b</color>
+    <color name="gameScreenPointsTxtColor">#f7921e</color>
+    <color name="Green">#33ffcc</color>
+    <color name="gameDeckBorder">#80ffffff</color>
+    <color name="listViewDividerColor">#51535a</color>
+    <color name="gameRoomBottomBg">#99000000</color>
+    <color name="black_trans80">#14000000</color>
+    <color name="Red">#ff0000</color>
+    <color name="black_trans90">#e6000000</color>
+    <color name="meldSubmittedByYouTextColor">#ed1c24</color>
+    <color name="meldSuggestedTextColor">#03953f</color>
+    <color name="yellow">#ffc125</color>
+    <color name="timerTextColor">#8eda39</color>
+    <color name="copyRightsTxtColor">#a1a09f</color>
+    <color name="white_gray">#cfcfcf</color>
+    <color name="DarkGray">#a9a9a9</color>
+    <color name="light_blue">#E0F7FA</color>
+    <color name="pnw_blue">#141C4A</color>
+
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="light_gray">#dfdfdf</color>
+    <color name="very_light_grey">#F5F5F5</color>
+    <color name="moreScreenBg">#ebebeb</color>
+    <color name="accent_500">#e91e63</color>
+    <color name="blue">#3C82EF</color>
+
+</resources>
